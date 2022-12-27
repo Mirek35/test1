@@ -49,6 +49,7 @@ fun Greeting(name: String) {
     ) {
         OutlinedButton(
             onClick = {licznik.value+=1},
+            enabled = licznik.value < 3,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(bottom = 10.dp, top = 10.dp),
